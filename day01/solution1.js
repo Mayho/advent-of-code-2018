@@ -1,9 +1,8 @@
-const fs = require('fs')
-const input = fs.readFileSync('./input')
+import { readFileSync } from 'fs';
+const input = readFileSync('./input')
 
 return input
   .toString()
   .split('\n')
   .map(item => parseInt(item, 10))
-  .reduce((a, b) =>  a+b);
-
+  .reduce((a, b) =>  a+b)
